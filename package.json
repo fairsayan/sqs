@@ -1,0 +1,39 @@
+{
+  "name": "@winkgroup/sqs",
+  "version": "1.0.0",
+  "description": "class to manage SQS",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
+  "scripts": {
+    "test": "npx jest",
+    "clean": "rm -rf build",
+    "build": "npm run clean && npx tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WINKgroup/sqs.git"
+  },
+  "keywords": [
+    "sqs"
+  ],
+  "author": "winksrl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WINKgroup/sqs/issues"
+  },
+  "homepage": "https://github.com/WINKgroup/sqs#readme",
+  "dependencies": {
+    "@aws-sdk/client-sqs": "^3.145.0",
+    "@aws-sdk/credential-provider-ini": "^3.145.0",
+    "@winkgroup/env": "^1.4.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.182",
+    "@types/node": "^18.6.5",
+    "typescript": "^4.7.4"
+  }
+}
